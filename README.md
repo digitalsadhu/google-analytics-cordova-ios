@@ -5,7 +5,7 @@ A iOS Google Analytics SDK 2.0 plugin for Cordova 2.5+
 Setup:
 ---------------------
 1. Add the SystemConfiguration and CoreData frameworks to Xcode.
-2. Open your confix.xml file add a new entry under Plugins with the key as googleAnalyticsPlugin (note the lower case g) and the value as GoogleAnalyticsPlugin like so:
+2. Open your config.xml file add a new entry under Plugins with the key as googleAnalyticsPlugin (note the lower case g) and the value as GoogleAnalyticsPlugin like so:
 
 Example:
 ---------------------
@@ -44,4 +44,4 @@ For a more detailed guide see http://jelled.com/google-analytics-plugin-for-phon
 
 Credit:
 ---------------------
-This is a fork with extremely minor changes of this repo: https://github.com/jelled/google-analytics-cordova-ios
+This is a fork with extremely minor changes of this repo: https://github.com/jelled/google-analytics-cordova-ios Full credit goes there.
