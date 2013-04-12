@@ -9,21 +9,21 @@ Setup:
 
 Example:
 ---------------------
-<plugins>
-    ...
-    <plugin name="googleAnalyticsPlugin" value="GoogleAnalyticsPlugin" />
-    ...
-</plugins>
+    <plugins>
+        ...
+        <plugin name="googleAnalyticsPlugin" value="GoogleAnalyticsPlugin" />
+        ...
+    </plugins>
 
 Then under ExternalHosts add a new entry with a value of * if necessary (Cordova 2.5 comes with this by default)
 
 Example:
 ---------------------
-<widget>
-    ...
-    <access origin="*" />
-    ...
-</widget>
+    <widget>
+        ...
+        <access origin="*" />
+        ...
+    </widget>
 
 3. Drag and drop the GoogleAnalytics folder onto your Plugins folder in Xcode. Select 'Copy items into destination group's folder (if needed)', select 'Create groups for any added folders', and check your target under 'Add to targets'.
 4. Reference your cordova.js file and the GoogleAnalyticsPlugin.js in your html. To use, wrap the window.GA methods inside of an onDeviceReady function.
