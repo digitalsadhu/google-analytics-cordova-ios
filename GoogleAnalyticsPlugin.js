@@ -1,11 +1,11 @@
 if (!window.GA) {
 	window.GA = {
 		trackerWithTrackingId: function(id) {
-			PhoneGap.exec("GoogleAnalyticsPlugin.trackerWithTrackingId",id);
+			cordova.exec("GoogleAnalyticsPlugin.trackerWithTrackingId",id);
 			//console.log("trackerWithTrackingId Initialized");
 		},
 		trackView: function(pageUri) {
-			PhoneGap.exec("GoogleAnalyticsPlugin.trackView",pageUri);
+			cordova.exec("GoogleAnalyticsPlugin.trackView",pageUri);
 			//console.log("trackView Initialized");
 		},
 		trackEventWithCategory: function(category,action,label,value) {
@@ -13,7 +13,7 @@ if (!window.GA) {
 				action:action,
 				label:label,
 				value:value};
-			PhoneGap.exec("GoogleAnalyticsPlugin.trackEventWithCategory",options);
+			cordova.exec("GoogleAnalyticsPlugin.trackEventWithCategory",options);
 		},
 		hitDispatched: function(hitString) {
 			//console.log("hitDispatched :: " + hitString);
@@ -21,5 +21,5 @@ if (!window.GA) {
 		trackerDispatchDidComplete: function(count) {
 			//console.log("trackerDispatchDidComplete :: " + count);
 		}
-	}
+	};
 }
